@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html ng-app="assignment">
+	<head>
+		<title>Student Managment</title>
+		<!-- Scripts -->
+		<script src="https://code.angularjs.org/1.7.5/angular.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-messages.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-route.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-animate.js"></script>
+		<script src="https://code.angularjs.org/1.7.5/angular-aria.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.12/angular-material.min.js"></script>
+		<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+		<script src="static/resources/js/app/app.js"></script>
+		<script src="static/resources/js/app/services.js"></script>
+		<script src="static/resources/js/contollers/studentController.js"></script>
+		<script src="static/resources/js/contollers/subjectController.js"></script>
+		<script src="static/resources/js/contollers/marksController.js"></script>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.12/angular-material.min.css">
+		<link rel="stylesheet" type="text/css" href="static/resources/styles/style.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="static/resources/images/title_icon.png" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<md-nav-bar class="bg-primary"
+		md-no-ink-bar="disableInkBar"
+		md-selected-nav-item="currentNavItem"
+		nav-bar-aria-label="navigation links">
+		<md-nav-item md-nav-href="#!/student" name="page1">
+		Student
+		</md-nav-item>
+		<md-nav-item md-nav-href="#!/subject" name="page2">
+		Subject
+		</md-nav-item>
+		<md-nav-item md-nav-href="#!/marks" name="page3">
+		Marks
+		</md-nav-item>
+		</md-nav-bar>
+		<div class="grids">
+			<!-- <div>
+					<table  width="100%" border="2" class="table" style="text-align: center; box-shadow: 5px 5px #888888;">
+							<tr>
+									<td>
+											<a href="#!/student" >
+													Student
+											</a>
+									</td>
+									<td>
+											<a href="#!/subject">
+													Subject
+											</a>
+									</td>
+									<td>
+											<a href="#!/marks" >
+													Marks
+											</a>
+									</td>
+							</tr>
+					</table>
+			</div> -->
+			<main ng-view>
+				
+			</main>
+		</div>
+<footer class="page-footer font-small special-color-dark pt-4">
+<div class="footer-copyright text-center py-3">&copy; 2019 Copyright:
+	<a class="text-danger" href="https://github.com/hybridx/"> 
+		hybridX
+	</a>
+</div>
+</footer>
+	</body>
+</html>
